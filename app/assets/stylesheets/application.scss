@@ -1,0 +1,67 @@
+@import "bootstrap";
+
+body {
+  text-align: center;
+}
+
+// プレビュー画像周り
+.preview{
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+.img{
+  position: absolute;
+  bottom: 10px;
+  left: 105px;
+}
+.shelf-title{
+  position: absolute;
+  top: 3px;
+  left: 90px;
+  font-size: 18px;
+  color: white;
+}
+
+// 候補書籍周り
+.item{
+  display: table;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.item-img{
+  display: table-cell;
+}
+.item-title{
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10px;
+  font-family: "sans-serif";
+}
+
+// 注意文
+.info {
+  color: #A4A4A4;
+  font-size: 13px;
+  margin: 10px;
+}
+
+// ローディング周り
+#loading {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.8;
+  color: black;
+}
+#loading .loadingMsg {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 220px;
+  background: image-url("gif-load.gif") center center no-repeat;
+}
